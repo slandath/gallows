@@ -20,7 +20,7 @@ export function HangmanWord({ guessedLetters, wordToGuess, reveal= false, }: Han
       {wordToGuess.split("").map((letter, index) => (
         <span
           style={{
-            borderBottom: ".1em solid black",
+            borderBottom: ".1em solid white",
           }}
           key={index}
         >
@@ -29,7 +29,7 @@ export function HangmanWord({ guessedLetters, wordToGuess, reveal= false, }: Han
               visibility: guessedLetters.includes(letter) || reveal
                 ? "visible"
                 : "hidden",
-                color: !guessedLetters.includes(letter) && reveal ? "red" : "black",
+                color: !guessedLetters.includes(letter) && reveal ? "red" : "white",
             }}
           >
             {letter}
