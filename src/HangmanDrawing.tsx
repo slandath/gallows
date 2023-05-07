@@ -4,7 +4,7 @@ const HEAD = (
       width: "1.5rem",
       height: "1.5rem",
       borderRadius: "100%",
-      border: ".313rem solid black",
+      border: ".313rem solid white",
       position: "absolute",
       top: "1.5rem",
       right: "1.5rem",
@@ -17,7 +17,7 @@ const BODY = (
     style={{
       width: ".313rem",
       height: "3.25rem",
-      background: "black",
+      background: "white",
       position: "absolute",
       top: "3.5rem",
       right: "2.5rem",
@@ -30,7 +30,7 @@ const RIGHT_ARM = (
     style={{
       width: "2.5rem",
       height: ".313rem",
-      background: "black",
+      background: "white",
       position: "absolute",
       top: "5rem",
       right: 0,
@@ -45,7 +45,7 @@ const LEFT_ARM = (
     style={{
       width: "2.5rem",
       height: ".313rem",
-      background: "black",
+      background: "white",
       position: "absolute",
       top: "5rem",
       right: "2.75rem",
@@ -60,7 +60,7 @@ const RIGHT_LEG = (
     style={{
       width: "3.5rem",
       height: ".313rem",
-      background: "black",
+      background: "white",
       position: "absolute",
       top: "6.5rem",
       right: "-.75rem",
@@ -75,7 +75,7 @@ const LEFT_LEG = (
     style={{
       width: "3.5rem",
       height: ".313rem",
-      background: "black",
+      background: "white",
       position: "absolute",
       top: "6.5rem",
       right: "2.5rem",
@@ -99,7 +99,7 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
         style={{
           height: "1.5rem",
           width: ".313rem",
-          background: "black",
+          background: "white",
           position: "absolute",
           top: 0,
           right: "2.5rem",
@@ -109,7 +109,7 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
         style={{
           height: ".313rem",
           width: "5rem",
-          background: "black",
+          background: "white",
           marginLeft: "3rem",
         }}
       />
@@ -117,7 +117,7 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
         style={{
           height: "11rem",
           width: ".313rem",
-          background: "black",
+          background: "white",
           marginLeft: "3rem",
         }}
       />
@@ -125,7 +125,7 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
       <div style={{ 
         height: ".313rem", 
         width: "10.625rem", 
-        background: "black" 
+        background: "white" 
         }} />
     </div>
   );
