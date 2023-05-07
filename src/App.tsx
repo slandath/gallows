@@ -70,7 +70,7 @@ function App() {
   return (
     <div
       style={{
-        maxWidth: "800px",
+        maxWidth: "21.875rem",
         display: "flex",
         flexDirection: "column",
         gap: "2rem",
@@ -78,9 +78,16 @@ function App() {
         alignItems: "center",
       }}
     >
-      <div style={{ fontSize: "2rem", textAlign: "center" }}>
-        {isWinner && "Winner! - Press Enter to try again"}
-        {isLoser && "Nice Try! - Press Enter to try again"}
+      <div style={{ 
+        fontSize: "1.5rem", 
+        textAlign: "center", 
+        fontFamily: "Monospace", 
+        backgroundColor: "#6E40BF",
+        color: "#ffffff",
+        padding: ".75rem",
+        borderRadius: ".75rem", }}>
+        {isWinner && "Winner!"}
+        {isLoser && "Game Over! - Press refresh to play again"}
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord
