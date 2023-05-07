@@ -4,13 +4,13 @@ import { HangmanWord } from "./HangmandWord";
 import { Keyboard } from "./Keyboard";
 import words from "./wordList.json";
 
-
 function getWord() {
   return words[Math.floor(Math.random() * words.length)];
 }
 
 function App() {
   // Chooses a random word from the wordList.json file
+  console.log(getWord)
   const [wordToGuess, setWordToGuess] = useState(getWord);
 
   // Holds letters that are guessed
@@ -58,7 +58,7 @@ function App() {
 
       e.preventDefault();
       setGuessedLetters([]);
-      setWordToGuess(getWord());
+      setWordToGuess(getWord);
     };
 
     document.addEventListener("keypress", handler);
