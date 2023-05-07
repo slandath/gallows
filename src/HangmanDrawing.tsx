@@ -1,13 +1,13 @@
 const HEAD = (
   <div
     style={{
-      width: "3.125rem",
-      height: "3.125rem",
+      width: "1.5rem",
+      height: "1.5rem",
       borderRadius: "100%",
-      border: "10px solid black",
+      border: ".313rem solid black",
       position: "absolute",
-      top: "3.125rem",
-      right: ".75rem",
+      top: "1.5rem",
+      right: "1.5rem",
     }}
   />
 );
@@ -15,11 +15,11 @@ const HEAD = (
 const BODY = (
   <div
     style={{
-      width: ".625rem",
-      height: "6.25rem",
+      width: ".313rem",
+      height: "3.25rem",
       background: "black",
       position: "absolute",
-      top: "7.5rem",
+      top: "3.5rem",
       right: "2.5rem",
     }}
   />
@@ -28,12 +28,12 @@ const BODY = (
 const RIGHT_ARM = (
   <div
     style={{
-      width: "5rem",
-      height: ".625rem",
+      width: "2.5rem",
+      height: ".313rem",
       background: "black",
       position: "absolute",
-      top: "9.375rem",
-      right: "-2.5rem",
+      top: "5rem",
+      right: 0,
       rotate: "-30deg",
       transformOrigin: "left bottom",
     }}
@@ -43,12 +43,12 @@ const RIGHT_ARM = (
 const LEFT_ARM = (
   <div
     style={{
-      width: "5rem",
-      height: ".625rem",
+      width: "2.5rem",
+      height: ".313rem",
       background: "black",
       position: "absolute",
-      top: "9.375rem",
-      right: "3rem",
+      top: "5rem",
+      right: "2.75rem",
       rotate: "30deg",
       transformOrigin: "right bottom",
     }}
@@ -58,12 +58,12 @@ const LEFT_ARM = (
 const RIGHT_LEG = (
   <div
     style={{
-      width: "7.5rem",
-      height: ".625rem",
+      width: "3.5rem",
+      height: ".313rem",
       background: "black",
       position: "absolute",
-      top: "13.125rem",
-      right: "-4.5rem",
+      top: "6.5rem",
+      right: "-.75rem",
       rotate: "60deg",
       transformOrigin: "left bottom",
     }}
@@ -73,11 +73,11 @@ const RIGHT_LEG = (
 const LEFT_LEG = (
   <div
     style={{
-      width: "7.5rem",
-      height: ".625rem",
+      width: "3.5rem",
+      height: ".313rem",
       background: "black",
       position: "absolute",
-      top: "13.125rem",
+      top: "6.5rem",
       right: "2.5rem",
       rotate: "-60deg",
       transformOrigin: "right bottom",
@@ -97,8 +97,8 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
       {BODY_PARTS.slice(0, numberOfGuesses)}
       <div
         style={{
-          height: "3.125rem",
-          width: ".625rem",
+          height: "1.5rem",
+          width: ".313rem",
           background: "black",
           position: "absolute",
           top: 0,
@@ -107,22 +107,26 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
       />
       <div
         style={{
-          height: ".625rem",
-          width: "7rem",
+          height: ".313rem",
+          width: "5rem",
           background: "black",
-          marginLeft: "6rem",
+          marginLeft: "3rem",
         }}
       />
       <div
         style={{
-          height: "23rem",
-          width: ".625rem",
+          height: "11rem",
+          width: ".313rem",
           background: "black",
-          marginLeft: "6rem",
+          marginLeft: "3rem",
         }}
       />
 
-      <div style={{ height: ".625rem", width: "15.625rem", background: "black" }} />
+      <div style={{ 
+        height: ".313rem", 
+        width: "10.625rem", 
+        background: "black" 
+        }} />
     </div>
   );
 }
