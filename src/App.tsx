@@ -10,7 +10,6 @@ function getWord() {
 
 function App() {
   // Chooses a random word from the wordList.json file
-  console.log(getWord)
   const [wordToGuess, setWordToGuess] = useState(getWord);
 
   // Holds letters that are guessed
