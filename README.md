@@ -1,6 +1,6 @@
-# Gallows - A hangman-clone
+# Gallows - A Hangman Clone
 
-## Based on the Web Dev Simplified _This Is A Great Beginner React/TypeScript Project_.
+## Based on the Web Dev Simplified project _This Is A Great Beginner React/TypeScript Project_.
 
 [Video link](https://www.youtube.com/watch?v=-ONUyenGnWw).  
 
