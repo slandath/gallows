@@ -78,14 +78,16 @@ function App() {
         alignItems: "center",
       }}
     >
-      <div style={{ 
-        fontSize: "1.5rem", 
-        textAlign: "center", 
-        fontFamily: "Monospace", 
-        backgroundColor: "#6E40BF",
-        color: "#ffffff",
-        padding: ".75rem",
-        borderRadius: ".75rem", }}>
+      <div
+        style={{
+          fontSize: "1.5rem",
+          textAlign: "center",
+          fontFamily: "Monospace",
+          backgroundColor: "#6E40BF",
+          color: "#ffffff",
+          borderRadius: ".75rem",
+        }}
+      >
         {isWinner && "Winner!"}
         {isLoser && "Game Over! - Press refresh to play again"}
       </div>
